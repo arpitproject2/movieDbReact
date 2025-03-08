@@ -8,7 +8,7 @@ export const getPopularMovies = async () =>{
 }
 
 export const SearchMovies = async (query) =>{
-    const response = await fetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}&query=${encodeURIComponent(
+    const response = await fetch(`${BASE_URL}/search/movie?api_key=${API_KEY}&query=${encodeURIComponent(
         query
     )}`
 );
